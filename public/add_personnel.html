@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Personnel</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Firebase libraries -->
+    <script defer src="/__/firebase/10.12.4/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/10.12.4/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.12.4/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/init.js"></script>
+    <script defer src="add_personnel.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Personnel</h1>
+        <form id="addPersonnelForm">
+            <div class="form-group">
+                <label for="personnelName">Name</label>
+                <input type="text" id="personnelName" name="personnelName" required>
+            </div>
+            <div class="form-group">
+                <label for="personnelEmail">Email</label>
+                <input type="email" id="personnelEmail" name="personnelEmail" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Add Personnel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
